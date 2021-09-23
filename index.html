@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма обратной связи</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="recrangle">
+            <div>
+                <form class="form" action="https://60376bfd5435040017722533.mockapi.io/form" method="POST"><br>
+                    <div>
+                        <h1 class="form__title" alt="ЗАДАТЬ ВОПРОС">Задать вопрос</h1>
+                    </div>
+                    <div><input type="text" class="form__name" name="name" placeholder="Фамилия Имя Отчество *" required
+                            pattern="([А-ЯЁ][а-яё]+[\-\s]?){2,}"><br><br>
+                    </div>
+                    <div><input type="text" class="form__phone" name="phone" placeholder="Телефон *" required
+                            pattern="^^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$"><br><br></div>
+                    <div><input type="text" class="form__email" name="email" placeholder="Email"
+                            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"><br><br>
+                    </div>
+                    <div><input class="form__sumbit" type="submit" value="ОТПРАВИТЬ ЗАПРОС"></div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
